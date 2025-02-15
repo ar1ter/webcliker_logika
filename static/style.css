@@ -1,94 +1,44 @@
-body{
-    background-color:rgb(18, 16, 33) ;
-    height: 100vh;
+body {
+	background-color: #0a0215;
+	color: #cdb4db;
+	text-align: center;
+	font-family: Arial, sans-serif;
 }
 
-h1{
-    text-align: center;
-    font-size: 50px;
-    color: rgb(92, 42, 154);
-    text-shadow: 0px 0px 20px rgba(92, 42, 154, 5);
+h1, h2 {
+	text-shadow: 2px 2px 10px #9d4edd;
 }
 
-.button_wrapper {
-    margin-top: 15px;
-    margin-left:auto;
-    margin-right: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    width: 45vh;
-    height: 45vh;
-}
-.circle_button {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: none; 
-    width: 275px; 
-    height: 275px;
-    background-color:rgb(41, 26, 90); 
-    color: rgb(17, 17, 17); 
-    font-size: 30px;
-    text-shadow: 0px 0px 30px rgba(0, 0, 0, 5);
-    box-shadow: 0px 0px 50px rgba(51, 46, 100, 5);
+#game-container {
+	margin-top: 50px;
 }
 
-hr{
-    color: rgb(100, 78, 180);
-    box-shadow: 0px 0px 40px rgba(150, 128, 200, 5);
-    
+button {
+	background-color: #5a189a;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	margin-top: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 5px;
+	transition: 0.2s;
 }
 
-.info {
-    padding: 10px;
-    text-align:start;
-}
-.button_info {
-    padding: 10px 10px;
-    font-size: 16px;
-    text-shadow: 0px 0px 20px rgba(92, 42, 154, 5);
-    background-color: rgb(29, 17, 67); 
-    box-shadow: 0px 0px 35px rgba(41, 36, 86, 5);
-    color: rgb(92, 42, 154); 
-    border: none; 
-    cursor: pointer; 
-    border-radius: 5px;
-    margin-top: 15px;
+button:hover {
+	background-color: #9d4edd;
+	transform: scale(1.05);
 }
 
-.shop {
-    padding: 10px;
-    text-align:start;
+#shop-menu {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #2a0429;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+	z-index: 100;
 }
-.button_shop {
-    padding: 10px 10px;
-    font-size: 16px;
-    text-shadow: 0px 0px 20px rgba(92, 42, 154, 5);
-    background-color: rgb(29, 17, 67); 
-    box-shadow: 0px 0px 35px rgba(41, 36, 86, 5);
-    color: rgb(92, 42, 154); 
-    border: none; 
-    cursor: pointer; 
-    border-radius: 5px;
-    margin-top: 15px;
-}
-
-.reset {
-    padding: 10px;
-    text-align:start;
-}
-.button_reset {
-    padding: 10px 10px;
-    font-size: 16px;
-    text-shadow: 0px 0px 20px rgba(92, 42, 154, 5);
-    background-color: rgb(29, 17, 67); 
-    box-shadow: 0px 0px 35px rgba(41, 36, 86, 5);
-    color: rgb(92, 42, 154); 
-    border: none; 
-    cursor: pointer; 
-    border-radius: 5px;
-    margin-top: 15px;
-}
-
