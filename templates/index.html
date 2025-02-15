@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">\
-    <title>deep-clicker</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flask Clicker</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1 class="welcome">!WELCOME!</h1>
-    <hr>
-    <h1 class="score">SCORE</h1>
-        <button class="button_info">INFO</button>
-    </span>
-    
-    <span class="shop">
-        <button class="button_shop">SHOP</button>
-    </span>
+	<h1>!WELCOME!</h1>
+	<h2>SCORE: <span id="score">0</span></h2>
 
-    <span class="button_wrapper">
-        <button class="circle_button">DEEP</button>
-    </span>
-    
-    <footer>
-    <span class="reset">
-        <button class="button_reset">RESET</button>
-    </span>
-    <hr>
-    </footer>
+	<div id="game-container">
+		<button id="click-button">CLICK</button>
+	</div>
+
+	<p>Balance: <span id="balance">0</span></p>
+
+	<button id="shop-button">Shop</button>
+
+	<div id="shop-menu" class="hidden">
+		<h3>Shop</h3>
+		<button id="buy-autoclicker">Buy Autoclicker (100 coins)</button>
+		<button id="buy-multiplier">Buy Double Click (20 coins)</button>
+		<button id="buy-booster">Buy Booster x2 (50 coins, 10 sec)</button>
+		<button id="close-shop">Close</button>
+	</div>
+
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
-
 </html>
